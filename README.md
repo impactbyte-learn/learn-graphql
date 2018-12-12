@@ -1,5 +1,25 @@
 # Learn GraphQL
 
+## Development
+
+**Installation**
+
+```sh
+yarn
+```
+
+**Start**
+
+```sh
+yarn start
+```
+
+**Auto Reload**
+
+```sh
+yarn dev
+```
+
 ## References
 
 - [GraphQL | A query language for your API](https://graphql.org)
