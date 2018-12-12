@@ -10,17 +10,29 @@ type Schema {
 }
 
 type Query {
-  hello: String
+  id: ID,
+  title: String,
+  description: String,
+  duration: Int,
+  completed: Boolean
 }
 `)
 
 const resolvers = {
-  hello: () => "Hello World"
+  id: () => "1",
+  title: () => "Hello Earth",
+  description: () => "A life-changing documentary serius about Earth.",
+  duration: () => 365,
+  completed: () => true
 }
 
 const query = `
-query callHelloWorld {
-  hello
+query callMovie {
+  id
+  title
+  description
+  duration
+  completed
 }
 `
 
