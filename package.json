@@ -1,0 +1,8 @@
+{
+  "name": "learn-graphql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:impactbyte-learn/learn-graphql.git",
+  "author": "M Haidar Hanif <git@mhaidarhanif.com>",
+  "license": "MIT"
+}
