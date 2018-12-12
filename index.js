@@ -10,10 +10,10 @@ type Schema {
 }
 
 type Query {
-  id: ID,
-  title: String,
+  id: ID!,
+  title: String!,
   description: String,
-  duration: Int,
+  duration: Int!,
   completed: Boolean
 }
 `)
