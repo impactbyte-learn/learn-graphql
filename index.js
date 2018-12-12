@@ -10,6 +10,10 @@ type Schema {
 }
 
 type Query {
+  movie: Movie
+}
+
+type Movie {
   id: ID!,
   title: String!,
   description: String,
@@ -19,20 +23,24 @@ type Query {
 `)
 
 const resolvers = {
-  id: () => "1",
-  title: () => "Hello Earth",
-  description: () => "A life-changing documentary serius about Earth.",
-  duration: () => 365,
-  completed: () => true
+  movie: () => ({
+    id: () => "1",
+    title: () => "Hello Earth",
+    description: () => "A life-changing documentary serius about Earth.",
+    duration: () => 365,
+    completed: () => true
+  })
 }
 
 const query = `
 query callMovie {
-  id
-  title
-  description
-  duration
-  completed
+  movie {
+    id
+    title
+    description
+    duration
+    completed
+  }
 }
 `
 
